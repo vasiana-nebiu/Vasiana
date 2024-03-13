@@ -1,0 +1,8 @@
+<p>two-way-input-binding works!</p>
+<div class="container">
+    <h2>Input Binding</h2>
+    <input class="form-control" [(ngModel)]="inputValue" placeholder="Enter something...">
+    <button class="btn btn-success mt-2" [disabled]="inputValue === ''" (click)="handleClick()">Submit</button>
+    <p *ngIf="submitted">Submitted Value: {{ inputValue }}</p>
+  </div>
+  
