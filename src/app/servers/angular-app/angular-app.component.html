@@ -1,0 +1,8 @@
+<p>angular-app works!</p>
+<div class="container">
+    <h2>Input Component</h2>
+    <input class="form-control" [(ngModel)]="inputValue" placeholder="Vendos nje vlere">
+    <button class="btn btn-success mt-2" [disabled]="inputValue === ''" (click)="handleClick()">Submit</button>
+    <p *ngIf="submitted">Submitted Value: {{ inputValue }}</p>
+  </div>
+  
